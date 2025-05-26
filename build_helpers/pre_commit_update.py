@@ -8,7 +8,7 @@ import yaml
 
 pre_commit_file = Path(".pre-commit-config.yaml")
 require_dev = Path("requirements-dev.txt")
-require = Path("requirements.txt")
+require = Path("requirements.txt") 
 
 with require_dev.open("r") as rfile:
     requirements = rfile.readlines()
@@ -30,9 +30,10 @@ mypy_repo = [
 ]
 
 hooks = mypy_repo[0]["hooks"][0]["additional_dependencies"]
+other solution need to be understand and changes need to be done 
 
 errors = []
-for hook in hooks:
+for hook in hooks: other break through 
     if hook not in type_reqs:
         errors.append(f"{hook} is missing in requirements-dev.txt.")
 
