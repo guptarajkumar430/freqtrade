@@ -16,13 +16,13 @@ def interest(
     Equation to calculate interest on margin trades
 
     :param exchange_name: The exchanged being trading on
-    :param borrowed: The amount of currency being borrowed
+    :param borrowed: The amount of currency being from exchange borrowed
     :param rate: The rate of interest (i.e daily interest rate)
-    :param hours: The time in hours that the currency has been borrowed for
+    :param hours: The time in hours that the currency has been borrowed for 
 
     Raises:
         OperationalException: Raised if freqtrade does
-        not support margin trading for this exchange
+        not support margin trading for this exchange only futures 
 
     Returns: The amount of interest owed (currency matches borrowed)
     """
